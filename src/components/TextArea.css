@@ -1,0 +1,43 @@
+.container .text-area{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 5px;
+}
+.container .text-area textarea{
+    border: none;
+}
+.container-result{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    max-height: 150px;
+}
+.container-result .text-summary{
+    padding: 20px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 5px;
+}
+.container-result .preview{
+    padding: 20px;
+    width:700px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    overflow-x: auto;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width: 768px) {
+    .btn-container, .container-result {
+        flex-direction: column;
+        align-content: space-between;
+    }
+    button{
+        margin-top: 10px;
+    }
+    .container-result .preview{
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+}
